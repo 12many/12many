@@ -1,0 +1,110 @@
+.video-section .pattern-overlay {
+background-color: rgba(71, 71, 71, 0.59);
+padding: 110px 0 32px;
+min-height: 496px; 
+/* Incase of overlay problems just increase the min-height*/
+}
+.video-container h1, .video-container h3{
+text-align:center;
+color:#fff;
+}
+.video-container h1{
+font-size:110px;
+font-family: 'Comfortaa', cursive;
+font-weight:bold;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+.video-container h3{
+font-family: 'Comfortaa', cursive;
+font-size: 25px;
+font-weight:lighter;
+margin: 0px auto 15px;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+/*Google Badge*/
+#googleBadge {
+	height: 100px;
+    width: 20%;
+}
+
+/*Apple Badge*/
+#appleBadge {
+	height: 68px;
+    width: 18%;
+}
+
+/*Badges*/
+.badges {
+	text-align: center;
+}
+
+/*One2Many Wording*/
+.col-lg-12 {
+	margin-top: 17%
+}
+
+/*Navbar Color*/
+.navbar {
+  background: rgba(0, 0, 0, 0.1);
+  max-width: 70%;
+  position: relative;
+  left: 175px;
+  margin-top: 2%;
+}
+
+/*Navbar Text Color*/
+.navbar a {
+    color: white;
+    display:block;
+    text-align:center;
+    width:150px; /* fixed width */
+    text-decoration:none; 
+}
