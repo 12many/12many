@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Data</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+</head>
+<body>
+    {# Bring in navbar.html using jinja2 #}
+    {% block content %}
+        {% include 'navbar.html' %}
+    {% endblock %}
+
+
+    <h1 style="text-align: center">Inventory Data</h1>
+
+    <br>
+    {#  Select form for filtering by data center and status easily  #}
+    <form id="select_form" class="form-inline" style="text-align: center">
+        <select id="data_center_code" class="form-control">
+            <option value ="arc_export_mark" selected style="display:none; color:gray;">Data Center</option>
+        </select>
+        <select id="status_select" class="form-control" style="text-align: center">
+            <option value ="" selected style="display:none; color:gray;">Status</option>
+        </select>
+    </form>
+
+    <br>
+    {# Basic search form #}
+    <form id="search_form" class="form-inline" style="text-align: center">
+            <input placeholder="Search" type="text" class="form-control" name="search_bar" id="search_bar" style="height: inherit">
+            <button type="submit" class="btn btn-primary" id="search">Search</button>
+            <button type="submit" class="btn btn-danger btn-md" value="Reset form" id="reset">Reset</button>
+    </form>
+
+    <br>
+
+    {# load spinner to show user when page is loading #}
+    <div id="load_spinner" hidden>
+        <center><img src="/static/ajax-loader.gif"></center>
+        <br>
+    </div>
+
+
+    <div class="container" id="inventory">
+        {# Table appears here from table_script.js #}
+    </div>
+
+<script src="/static/js/jquery-3.2.1.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+<script src="/static/js/jquery.tablesorter.js"></script>
+
+<script src="/static/js/table_script.js"></script>
+<script src="/static/js/options.js"></script>
+
+</body>
+</html>
